@@ -14,6 +14,7 @@ AC_PROG_INSTALL
 AC_PROG_AWK
 AC_PROG_CPP
 AC_PROG_MKDIR_P
+AM_PROG_LIBTOOL
 
 # Checks for libraries.
 PKG_CHECK_MODULES([glib], [glib-2.0])
@@ -25,8 +26,7 @@ AC_SUBST(gtk_LIBS)
 AC_SUBST(gtk_CFLAGS)
 
 # Checks for header files.
-AC_PATH_X
-AC_CHECK_HEADERS([stdlib.h])
+AC_HEADER_STDC
 
 # Checks for typedefs, structures, and compiler characteristics.
 
